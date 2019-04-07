@@ -1,0 +1,25 @@
+jogo de batalha naval 4 jogadores
+rede em anel com 4 maquinas usando socket datagram
+implementar controle de acesso de passagem de bastão
+
+relatorio obrigatorio
+
+tabuleiro 5x5
+2 navios 3x1
+
+=>inicio
+jogadores distribuem navios pelo tabuleiro
+
+=>jogador com bastão
+escolhe oponente e area de ataque
+cria mensagem e envia
+
+=>jogadores sem bastão
+se não atacado -> passa mensagem
+se atacado -> adiciona resultado do ataque na mensagem e manda pra frente
+
+quem coloca mensagem na rede é quem tira
+quando um navio é afundado todas as maquinas devem ser avisadas
+bastao não temporizado
+deve ter timeout de mensagem
+jogador afundado para de jogar, mas maquina continua na rede
